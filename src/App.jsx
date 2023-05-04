@@ -11,6 +11,7 @@ import SparklesEffect from './Components/Sparkles';
 import LightEffects from './Components/LightEffects';
 
 import Row1 from './Components/Rows/Row1';
+import Row2 from './Components/Rows/Row2';
 
 import './App.scss';
 
@@ -41,24 +42,8 @@ const App = () => {
         <Scroll html style={{ width: '100%' }}>
           <Container style={{ height: '100px', position: 'relative' }}>
             <Row1 />
-            <Row
-              className='text-center align-items-center justify-content-center'
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100vh',
-                padding: '0px 30px 0px',
-                top: '100vh',
-              }}
-            >
-              <Col xs={6}>
-                <div>
-                  <h1 style={{ marginBottom: '0px' }}>
-                    Sometimes you can feel
-                  </h1>
-                </div>
-              </Col>
-            </Row>
+            <Row2 />
+
             <Row
               className='text-center align-items-center justify-content-center'
               style={{
