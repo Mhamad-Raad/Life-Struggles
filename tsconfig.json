@@ -1,4 +1,7 @@
 {
+  "jsxImportSource": "@emotion/react",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
   "compilerOptions": {
     "target": "es5",
     "lib": [
