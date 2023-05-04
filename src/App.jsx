@@ -1,10 +1,5 @@
 import { Environment, ScrollControls, Scroll } from '@react-three/drei';
-import {
-  EffectComposer,
-  DepthOfField,
-  Bloom,
-  Vignette,
-} from '@react-three/postprocessing';
+
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,27 +9,14 @@ import Button from 'react-bootstrap/Button';
 import Butterflies from './Components/Butterflies';
 import Sounds from './Components/Sounds';
 import SparklesEffect from './Components/Sparkles';
+import LightEffects from './Components/LightEffects';
 
 import './App.scss';
 
 const App = () => {
   return (
     <>
-      <EffectComposer>
-        <DepthOfField
-          focusDistance={0}
-          focalLength={0.02}
-          bokehScale={5}
-          height={480}
-        />
-        <Bloom
-          intensity={2}
-          luminanceThreshold={0.1}
-          luminanceSmoothing={0.9}
-          height={1000}
-        />
-        <Vignette eskil={false} offset={0.1} darkness={1.5} />
-      </EffectComposer>
+      <LightEffects />
       <Butterflies />
       <color attach='background' args={['#000']} />
       <ambientLight intensity={0.2} />
