@@ -10,7 +10,7 @@ Title: Butterfly
 import React, { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 
-export function Butterfly(props) {
+const Butterfly = (props) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
     './models/butterfly/scene-transformed.glb'
@@ -933,6 +933,8 @@ export function Butterfly(props) {
       </group>
     </group>
   );
-}
+};
 
 useGLTF.preload('./models/butterfly/scene-transformed.glb');
+
+export default Butterfly;
