@@ -6,9 +6,9 @@ import './Header.scss';
 
 const Header: FC<{}> = () => {
   return (
-    <div className='header'>
-      <img src={Logo} alt='logo' />
-    </div>
+    <header className='header'>
+      <img src={Logo} alt='logo' className='header__logo' />
+    </header>
   );
 };
 
