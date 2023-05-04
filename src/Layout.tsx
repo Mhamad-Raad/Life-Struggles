@@ -1,12 +1,15 @@
 import { FC } from 'react';
 import Header from './Components/Header/Header';
 import App from './App';
+import { Canvas } from '@react-three/fiber';
 
 const Layout: FC<{}> = () => {
   return (
     <>
       <Header />
-      <App />
+      <Canvas>
+        <App />
+      </Canvas>
     </>
   );
 };

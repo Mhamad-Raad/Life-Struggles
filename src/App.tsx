@@ -1,10 +1,18 @@
+import { ScrollControls, Scroll } from '@react-three/drei';
 import './App.scss';
-import Header from './Components/Header/Header';
 
 function App() {
   return (
-    <div className='App'>
-    </div>
+    <>
+      <ScrollControls pages={6} damping={0.25}>
+        <Scroll>
+
+        </Scroll>
+        <Scroll html>
+          
+        </Scroll>
+      </ScrollControls>
+    </>
   );
 }
 
