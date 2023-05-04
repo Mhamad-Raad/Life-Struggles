@@ -12,6 +12,10 @@ import LightEffects from './Components/LightEffects';
 
 import Row1 from './Components/Rows/Row1';
 import Row2 from './Components/Rows/Row2';
+import Row3 from './Components/Rows/Row3';
+import Row4 from './Components/Rows/Row4';
+// import Row5 from './Components/Rows/Row5';
+// import Row6 from './Components/Rows/Row6';
 
 import './App.scss';
 
@@ -43,45 +47,9 @@ const App = () => {
           <Container style={{ height: '100px', position: 'relative' }}>
             <Row1 />
             <Row2 />
-
-            <Row
-              className='text-center align-items-center justify-content-center'
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100vh',
-                padding: '0px 30px 0px',
-                top: '200vh',
-              }}
-            >
-              <Col xs={6}>
-                <div>
-                  <h1 style={{ marginBottom: '0px' }}>Lost</h1>
-                  <h1 style={{ marginBottom: '0px' }}>Overwhelmed</h1>
-                  <h1 style={{ marginBottom: '0px' }}>Empty inside</h1>
-                </div>
-              </Col>
-            </Row>
-            <Row
-              className='text-center align-items-center justify-content-center'
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100vh',
-                padding: '0px 30px 0px',
-                top: '300vh',
-              }}
-            >
-              <Col xs={6}>
-                <div>
-                  <h1 style={{ marginBottom: '0px' }}>
-                    Drifting through life <br />
-                    With no help or guidance
-                  </h1>
-                </div>
-              </Col>
-            </Row>
-
+            <Row3 />
+            <Row4 />
+            {/* <Row5 /> */}
             <Row
               className='text-center align-items-center justify-content-center'
               style={{
