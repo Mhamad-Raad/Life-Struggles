@@ -1,6 +1,5 @@
 import { Environment, ScrollControls, Scroll } from '@react-three/drei';
 
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,7 +16,7 @@ const App = () => {
   return (
     <>
       <LightEffects />
-      <Butterflies />
+
       <color attach='background' args={['#000']} />
       <ambientLight intensity={0.2} />
       <spotLight
@@ -34,6 +33,7 @@ const App = () => {
         <Scroll>
           <SparklesEffect />
           <Sounds />
+          <Butterflies />
         </Scroll>
 
         <Scroll html style={{ width: '100%' }}>
