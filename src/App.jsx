@@ -14,7 +14,7 @@ import Row1 from './Components/Rows/Row1';
 import Row2 from './Components/Rows/Row2';
 import Row3 from './Components/Rows/Row3';
 import Row4 from './Components/Rows/Row4';
-// import Row5 from './Components/Rows/Row5';
+import Row5 from './Components/Rows/Row5';
 // import Row6 from './Components/Rows/Row6';
 
 import './App.scss';
@@ -49,26 +49,8 @@ const App = () => {
             <Row2 />
             <Row3 />
             <Row4 />
-            {/* <Row5 /> */}
-            <Row
-              className='text-center align-items-center justify-content-center'
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100vh',
-                padding: '0px 30px 0px',
-                top: '400vh',
-              }}
-            >
-              <Col xs={8}>
-                <div>
-                  <h1 style={{ marginBottom: '0px' }}>
-                    But there is hope...
-                    <br /> and people who can help
-                  </h1>
-                </div>
-              </Col>
-            </Row>
+            <Row5 />
+            {/* <Row6 /> */}
 
             <Row
               className='text-center align-items-center justify-content-center'
