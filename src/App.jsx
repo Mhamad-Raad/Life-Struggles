@@ -5,7 +5,6 @@ import {
   Scroll,
   PositionalAudio,
 } from '@react-three/drei';
-import { useRef } from 'react';
 import {
   EffectComposer,
   DepthOfField,
@@ -18,19 +17,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import Sound from './sounds/ambient.mp3';
-import Sound2 from './sounds/ambient-rain.mp3';
-import Sound3 from './sounds/ambient-happy.mp3';
-
 import Butterflies from './Components/Butterflies';
+import Sound from './Components/Sounds';
 
 import './App.scss';
+import Sounds from './Components/Sounds';
 
 const App = () => {
-  const music = useRef();
-  const music_2 = useRef();
-  const music_3 = useRef();
-
   return (
     <>
       <EffectComposer>
@@ -81,34 +74,7 @@ const App = () => {
             opacity={2}
             scale={[30, 100, 10]}
           ></Sparkles>
-
-          <group position={[0, 0, 0]}>
-            <PositionalAudio
-              ref={music}
-              autoplay
-              loop
-              url={Sound}
-              distance={1.2}
-            />
-          </group>
-          <group position={[0, -20, 0]}>
-            <PositionalAudio
-              ref={music_2}
-              autoplay
-              loop
-              url={Sound2}
-              distance={3}
-            />
-          </group>
-          <group position={[0, -40, 0]}>
-            <PositionalAudio
-              ref={music_3}
-              autoplay
-              loop
-              url={Sound3}
-              distance={1.2}
-            />
-          </group>
+          <Sounds />
         </Scroll>
 
         <Scroll html style={{ width: '100%' }}>
