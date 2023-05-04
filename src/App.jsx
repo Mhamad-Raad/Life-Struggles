@@ -1,10 +1,4 @@
-import {
-  Environment,
-  Sparkles,
-  ScrollControls,
-  Scroll,
-  PositionalAudio,
-} from '@react-three/drei';
+import { Environment, ScrollControls, Scroll } from '@react-three/drei';
 import {
   EffectComposer,
   DepthOfField,
@@ -18,10 +12,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import Butterflies from './Components/Butterflies';
-import Sound from './Components/Sounds';
+import Sounds from './Components/Sounds';
+import SparklesEffect from './Components/Sparkles';
 
 import './App.scss';
-import Sounds from './Components/Sounds';
 
 const App = () => {
   return (
@@ -56,24 +50,7 @@ const App = () => {
 
       <ScrollControls pages={6} damping={0.25}>
         <Scroll>
-          <Sparkles
-            noise={0}
-            count={500}
-            speed={0.01}
-            size={0.6}
-            color={'#FFD2BE'}
-            opacity={10}
-            scale={[20, 100, 20]}
-          ></Sparkles>
-          <Sparkles
-            noise={0}
-            count={50}
-            speed={0.01}
-            size={10}
-            color={'#FFF'}
-            opacity={2}
-            scale={[30, 100, 10]}
-          ></Sparkles>
+          <SparklesEffect />
           <Sounds />
         </Scroll>
 
