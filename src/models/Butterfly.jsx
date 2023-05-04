@@ -481,6 +481,7 @@ export function Butterfly(props) {
                   name='Object_111'
                   position={[2.47, -1.19, 1.22]}
                   rotation={[-Math.PI / 2, 0, 0]}
+                  visible={false}
                 >
                   <group name='TimeframeMainGroup_2'>
                     <group name='Object_113'>
