@@ -6,6 +6,8 @@ import {
   Vignette,
 } from '@react-three/postprocessing';
 
+import useWindowSize from '../CustomHooks/useWindowResize';
+
 const LightEffects: FC<{}> = () => {
   const bloomEffect = {
     intensity: 2,
@@ -14,13 +16,21 @@ const LightEffects: FC<{}> = () => {
     height: 1000,
   };
 
+  const windowSize: number = useWindowSize();
+
+  let focalLength = 0.02;
+
+  if (windowSize < 768) {
+    focalLength = 0.1;
+  }
+
   return (
     <EffectComposer>
       <DepthOfField
         focusDistance={0}
-        focalLength={0.02}
+        focalLength={focalLength}
         bokehScale={5}
-        height={480}
+        height={500}
       />
       <Bloom
         {...bloomEffect}
