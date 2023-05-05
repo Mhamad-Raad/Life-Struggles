@@ -18,7 +18,7 @@ const Row1: FC<{}> = () => {
         padding: '0px 30px 0px',
       }}
     >
-      <Col xs={6}>
+      <Col xs={12}>
         <h1>Life can be a struggle</h1>
       </Col>
     </Row>

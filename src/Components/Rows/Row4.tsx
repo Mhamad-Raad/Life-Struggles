@@ -15,7 +15,7 @@ const Row1: FC<{}> = () => {
         top: '300vh',
       }}
     >
-      <Col xs={6}>
+      <Col xs={12}>
           <h1>
             Drifting through life <br />
             With no help or guidance

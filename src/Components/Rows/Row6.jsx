@@ -14,7 +14,7 @@ const Row1 = () => {
         top: '500vh',
       }}
     >
-      <Col xs={10}>
+      <Col xs={12}>
         <h1 >
           It's time to get
           <br /> the support you need

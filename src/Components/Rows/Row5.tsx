@@ -15,7 +15,7 @@ const Row1: FC<{}> = () => {
         top: '400vh',
       }}
     >
-      <Col xs={8}>
+      <Col xs={12}>
         <h1>
           But there is hope...
           <br /> and people who can help

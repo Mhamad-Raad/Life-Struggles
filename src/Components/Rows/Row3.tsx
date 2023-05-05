@@ -15,9 +15,9 @@ const Row1: FC<{}> = () => {
         top: '200vh',
       }}
     >
-      <Col xs={6}>
-        <h1>Lost</h1>
-        <h1>Overwhelmed</h1>
+      <Col xs={12}>
+        <h1 className='mb-1'>Lost</h1>
+        <h1 className='mb-1'>Overwhelmed</h1>
         <h1>Empty inside</h1>
       </Col>
     </Row>
