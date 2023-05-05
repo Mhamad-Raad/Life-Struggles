@@ -5,11 +5,13 @@ import useWindowSize from '../CustomHooks/useWindowResize';
 
 const Butterflies: FC<{}> = () => {
   const windowSize: number = useWindowSize();
-  const isMobile = windowSize < 768;
 
   let scale = 0.05;
 
-  if (isMobile) {
+  if (windowSize < 768) {
+    scale = 0.02;
+  }
+  if (windowSize < 400) {
     scale = 0.01;
   }
 
@@ -18,28 +20,48 @@ const Butterflies: FC<{}> = () => {
       {/* top */}
       <Float
         speed={1} // Animation speed, defaults to 1
-        rotationIntensity={2} // XYZ rotation intensity, defaults to 1
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
         <Butterfly
-          rotation-x={Math.PI * 0.05}
+          rotation-x={Math.PI * scale}
           scale={scale}
-          position={[0, -2.5, 0]}
+          position={
+            windowSize > 768
+              ? [0, -2.5, 0]
+              : windowSize > 768
+              ? [0, -2, 0]
+              : [0, -1.5, 0]
+          }
         />
         <Butterfly
           scale={scale}
-          position={isMobile ? [-2, -3, -6] : [-10, -3, -6]}
-          rotation-x={Math.PI * 0.05}
+          position={
+            windowSize > 768
+              ? [-10, -3, -6]
+              : windowSize > 768
+              ? [-4, -1, -6]
+              : [-2, -1, -6]
+          }
+          rotation-x={Math.PI * scale}
         />
-        <Butterfly scale={scale} position={[10, -4, -10]} />
+        <Butterfly
+          scale={scale}
+          position={
+            windowSize > 768
+              ? [10, -4, -10]
+              : windowSize > 400
+              ? [6, -3, -10]
+              : [3.5, -3, -10]
+          }
+        />
       </Float>
       {/* top */}
 
       {/* middle */}
       <Float
         speed={1} // Animation speed, defaults to 1
-        rotationIntensity={2} // XYZ rotation intensity, defaults to 1
+        rotationIntensity={0.2} // XYZ rotation intensity, defaults to 1
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
@@ -51,13 +73,13 @@ const Butterflies: FC<{}> = () => {
       {/* middle */}
       <Float
         speed={1} // Animation speed, defaults to 1
-        rotationIntensity={2} // XYZ rotation intensity, defaults to 1
+        rotationIntensity={0.2} // XYZ rotation intensity, defaults to 1
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
-        <Butterfly scale={scale} position={[-3, -19.5, 2]} />
+        <Butterfly scale={scale} position={[-3, -19.5, -2]} />
         <Butterfly scale={scale} position={[8, -23, -10]} />
-        <Butterfly scale={scale} position={[4, -24, 2]} />
+        <Butterfly scale={scale} position={[4, -24, -3]} />
       </Float>
       {/* middle */}
     </>
