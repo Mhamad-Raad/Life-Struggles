@@ -3,6 +3,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const Row1 = () => {
+  const clickHandler = () => {
+    window.open('https://www.helpguide.org/');
+  };
   return (
     <Row
       className='text-center align-items-center justify-content-center'
@@ -15,14 +18,14 @@ const Row1 = () => {
       }}
     >
       <Col xs={12}>
-        <h1 >
+        <h1>
           It's time to get
           <br /> the support you need
         </h1>
         <h2 style={{ marginBottom: '30px', marginTop: '-20px' }}>
           To get your life back
         </h2>
-        <Button variant='outline-light' size='lg'>
+        <Button variant='outline-light' size='lg' onClick={clickHandler}>
           Get help now
         </Button>
       </Col>
