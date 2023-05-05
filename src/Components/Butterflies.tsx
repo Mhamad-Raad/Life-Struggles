@@ -95,9 +95,30 @@ const Butterflies: FC<{}> = () => {
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
-        <Butterfly scale={scale} position={[-3, -19.5, -2]} />
-        <Butterfly scale={scale} position={[8, -23, -10]} />
-        <Butterfly scale={scale} position={[4, -24, -3]} />
+        <Butterfly
+          scale={scale}
+          position={
+            windowSize > 768
+              ? [-3, -19.5, -2]
+              : windowSize > 400
+              ? [-2.5, -20.5, -2]
+              : [-1, -20.5, -2]
+          }
+        />
+        <Butterfly
+          scale={scale}
+          position={
+            windowSize > 768
+              ? [8, -23, -10]
+              : windowSize > 400
+              ? [6, -24, -7]
+              : [2.5, -24, -7]
+          }
+        />
+        <Butterfly
+          scale={scale}
+          position={windowSize > 768 ? [4, -24, -3] : [0, -27, -3]}
+        />
       </Float>
       {/* Bottom */}
     </>
