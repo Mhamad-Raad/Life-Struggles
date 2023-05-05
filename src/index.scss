@@ -16,6 +16,26 @@ h2 {
   font-size: 40px !important;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 25px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   color: #fff;
