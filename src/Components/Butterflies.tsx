@@ -1,8 +1,18 @@
 import { FC } from 'react';
 import { Float } from '@react-three/drei';
 import Butterfly from '../models/Butterfly';
+import useWindowSize from '../CustomHooks/useWindowResize';
 
 const Butterflies: FC<{}> = () => {
+  const windowSize: number = useWindowSize();
+  const isMobile = windowSize < 768;
+
+  let scale = 0.05;
+
+  if (isMobile) {
+    scale = 0.01;
+  }
+
   return (
     <>
       {/* top */}
@@ -14,11 +24,15 @@ const Butterflies: FC<{}> = () => {
       >
         <Butterfly
           rotation-x={Math.PI * 0.05}
-          scale={0.05}
+          scale={scale}
           position={[0, -2.5, 0]}
         />
-        <Butterfly scale={0.05} position={[-10, -3, -6]} />
-        <Butterfly scale={0.05} position={[10, -4, -10]} />
+        <Butterfly
+          scale={scale}
+          position={isMobile ? [-2, -3, -6] : [-10, -3, -6]}
+          rotation-x={Math.PI * 0.05}
+        />
+        <Butterfly scale={scale} position={[10, -4, -10]} />
       </Float>
       {/* top */}
 
@@ -29,8 +43,8 @@ const Butterflies: FC<{}> = () => {
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
-        <Butterfly scale={0.05} position={[-1, -12.5, 0]} />
-        <Butterfly scale={0.05} position={[12, -14, -10]} />
+        <Butterfly scale={scale} position={[-1, -12.5, 0]} />
+        <Butterfly scale={scale} position={[12, -14, -10]} />
       </Float>
       {/* middle */}
 
@@ -41,9 +55,9 @@ const Butterflies: FC<{}> = () => {
         floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
-        <Butterfly scale={0.05} position={[-3, -19.5, 2]} />
-        <Butterfly scale={0.05} position={[8, -23, -10]} />
-        <Butterfly scale={0.05} position={[4, -24, 2]} />
+        <Butterfly scale={scale} position={[-3, -19.5, 2]} />
+        <Butterfly scale={scale} position={[8, -23, -10]} />
+        <Butterfly scale={scale} position={[4, -24, 2]} />
       </Float>
       {/* middle */}
     </>
