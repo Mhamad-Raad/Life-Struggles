@@ -11,9 +11,11 @@ const Layout: FC<{}> = () => {
     <>
       <LoadPage />
       <Header />
-      <Canvas>
-        <App />
-      </Canvas>
+      <div className='content'>
+        <Canvas>
+          <App />
+        </Canvas>
+      </div>
     </>
   );
 };
