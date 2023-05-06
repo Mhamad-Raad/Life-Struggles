@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import useWindowSize from '../../CustomHooks/useWindowResize';
 
 const Row6 = () => {
-  const windowSize  = useWindowSize();
+  const windowSize = useWindowSize();
 
   const clickHandler = () => {
     window.open('https://www.helpguide.org/');
@@ -17,9 +17,9 @@ const Row6 = () => {
       style={{
         position: 'absolute',
         width: '100%',
-        height: windowSize < 768 ? '75vh' : '100vh',
+        height: '100vh',
         padding: '0px 30px 0px',
-        top: '500vh',
+        top: windowSize < 768 ? '475vh' : '500vh',
       }}
     >
       <Col xs={12}>
