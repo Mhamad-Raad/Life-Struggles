@@ -4,10 +4,12 @@ import App from './App';
 import { Canvas } from '@react-three/fiber';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoadPage from './Components/LoadPage/LoadPage';
 
 const Layout: FC<{}> = () => {
   return (
     <>
+      <LoadPage />
       <Header />
       <Canvas>
         <App />

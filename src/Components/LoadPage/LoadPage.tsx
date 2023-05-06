@@ -1,11 +1,27 @@
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 
-import 'LoadPage.scss';
+import './LoadPage.scss';
 
-export default function LoadPage() {
+const LoadPage: FC<{}> = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className='loader'>
-
+    <div className={`loader ${loaded && 'remove'}`}>
+      <h1>There is always HOPE</h1>
+      <h2>Don't Give up</h2>
+      <div className='loader__loading'>
+        <div />
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default LoadPage;
