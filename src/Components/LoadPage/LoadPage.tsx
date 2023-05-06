@@ -8,7 +8,7 @@ const LoadPage: FC<{}> = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
-    }, 5000);
+    }, 6500);
 
     return () => clearTimeout(timer);
   }, []);

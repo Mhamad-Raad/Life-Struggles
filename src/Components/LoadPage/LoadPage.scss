@@ -45,7 +45,7 @@
   background-color: black;
   z-index: 1000;
   animation-name: loaderAnimation;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-duration: 1s;
   transition: all 1s;
 
@@ -89,5 +89,5 @@
 }
 
 .remove {
-  display: none;
+  display: none !important;
 }
