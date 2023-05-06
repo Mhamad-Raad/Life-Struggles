@@ -2,7 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-const Row1 = () => {
+const Row6 = () => {
   const clickHandler = () => {
     window.open('https://www.helpguide.org/');
   };
@@ -33,4 +33,4 @@ const Row1 = () => {
   );
 };
 
-export default Row1;
+export default Row6;

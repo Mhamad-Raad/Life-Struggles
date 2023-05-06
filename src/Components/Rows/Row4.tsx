@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Row1: FC<{}> = () => {
+const Row4: FC<{}> = () => {
   return (
     <Row
       className='text-center align-items-center justify-content-center'
@@ -25,4 +25,4 @@ const Row1: FC<{}> = () => {
   );
 };
 
-export default Row1;
+export default Row4;
