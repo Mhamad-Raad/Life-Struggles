@@ -19,7 +19,7 @@ const Row6 = () => {
         width: '100%',
         height: '100vh',
         padding: '0px 30px 0px',
-        top: windowSize < 768 ? '475vh' : '500vh',
+        top: windowSize < 768 ? '450vh' : '500vh',
       }}
     >
       <Col xs={12}>

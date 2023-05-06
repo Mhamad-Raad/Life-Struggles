@@ -1,4 +1,5 @@
 import { FC, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 import './LoadPage.scss';
 
@@ -14,13 +15,18 @@ const LoadPage: FC<{}> = () => {
   }, []);
 
   return (
-    <div className={`loader ${loaded && 'remove'}`}>
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0 }}
+      transition={{ duration: 1, delay: 6 }}
+      className={`loader ${loaded && 'remove'}`}
+    >
       <h1>There is always HOPE</h1>
       <h2>Don't Give up</h2>
       <div className='loader__loading'>
         <div />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
