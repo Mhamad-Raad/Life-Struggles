@@ -34,31 +34,31 @@ This is a enhanced replica of another project that tries to show that there is l
   <br>
   <ul> 
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="90px"  height="35px" src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue" />
+      <img alt="Frammer Motion" width="90px"  height="35px" src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="100px"  height="35px" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
+      <img alt="HTML" width="100px"  height="35px" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="130px"  height="35px" src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" />
+      <img alt="Three.js" width="130px"  height="35px" src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="145px"  height="35px" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
+      <img alt="SASS" width="145px"  height="35px" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="140px"  height="35px" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+      <img alt="TypeScript" width="140px"  height="35px" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="120px"  height="35px" src="https://img.shields.io/badge/React-0075A8?style=for-the-badge&logo=react&logoColor=61DAFB" />
+      <img alt="React" width="120px"  height="35px" src="https://img.shields.io/badge/React-0075A8?style=for-the-badge&logo=react&logoColor=61DAFB" />
     </a>
     <br>
     <a href="https://github.com/Mhamad-Raad/Life-Struggles">
-      <img alt="ruby" width="120px"  height="35px" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" />
+      <img alt="Vercel" width="120px"  height="35px" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" />
     </a>
     <br>
     
