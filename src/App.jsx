@@ -1,4 +1,4 @@
-import { Environment, ScrollControls, Scroll } from '@react-three/drei';
+import { ScrollControls, Scroll } from '@react-three/drei';
 
 import Container from 'react-bootstrap/Container';
 
