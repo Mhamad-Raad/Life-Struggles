@@ -18,7 +18,7 @@ const LoadPage: FC<{}> = () => {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ duration: 1, delay: 6 }}
+      transition={{ duration: 1, delay: 10 }}
       className={`loader ${loaded && 'remove'}`}
     >
       <h1>There is always HOPE</h1>
