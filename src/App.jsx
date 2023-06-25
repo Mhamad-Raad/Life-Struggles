@@ -31,7 +31,6 @@ const App = () => {
         intensity={2}
         shadow-bias={-0.0001}
       />
-      <Environment preset='warehouse' />
 
       <ScrollControls pages={6} damping={0.25}>
         <Scroll>
